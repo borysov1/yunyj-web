@@ -1,0 +1,17 @@
+.contact-section__body {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section__main {
+  width: 100%;
+}
+.contact-section__title {
+  color: #0979f5;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  font-size: calc(30px + 25 * ((100vw - 320px) / 1120));
+}
+.contact-section__textblock {
+  width: 50%;
+}

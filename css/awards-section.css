@@ -1,0 +1,211 @@
+.lock {
+  overflow: hidden;
+}
+
+.awards-section {
+  background-color: #f6f6f6;
+}
+.awards-section__wrapper {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.awards-section__main {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.awards-section__main:last-child {
+  padding-bottom: 0;
+}
+.awards-section .marg {
+  margin: 0 -1rem;
+}
+.awards-section__title {
+  color: #0979f5;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  font-size: calc(25px + 30 * ((100vw - 320px) / 1120));
+}
+.awards-section__item {
+  border-right: 1px solid #898989;
+  width: 33.333333%;
+  position: relative;
+  padding-bottom: 5rem;
+}
+.awards-section__item:last-child {
+  border-right: 0;
+}
+.awards-section__inneritem {
+  margin: 0 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid #0979f5;
+  display: flex;
+  flex-direction: column;
+}
+.awards-section__column {
+  margin-bottom: 2rem;
+}
+.awards-section__subtitle {
+  color: #26292e;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
+}
+.awards-section__text {
+  color: #26292e;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  line-height: 1.7em;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+}
+.awards-section__see {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.awards-section__span {
+  margin-bottom: 1rem;
+  color: #26292e;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
+}
+.awards-section__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #898989;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.awards-section__icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0979f5;
+  z-index: 1;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+.awards-section__icon:hover::before {
+  opacity: 1;
+}
+.awards-section__icon:hover .awards-section__innericon {
+  fill: #ffffff;
+}
+.awards-section__innericon {
+  position: relative;
+  z-index: 2;
+  transform: rotate(-90deg);
+  fill: #0979f5;
+  width: 35px;
+  height: 35px;
+}
+.awards-section__modal, .awards-section__modal2, .awards-section__modal3 {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+}
+.awards-section .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 69%;
+}
+.awards-section .modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+.awards-section .modal-icon, .awards-section .modal-icon2, .awards-section .modal-icon3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0.5rem;
+  border: 1px solid #ffffff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.awards-section .modal-icon:hover, .awards-section .modal-icon2:hover, .awards-section .modal-icon3:hover {
+  background-color: #0979f5;
+}
+.awards-section .modal-innericon {
+  fill: #ffffff;
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.awards-section .show-modal, .awards-section .show-modal2, .awards-section .show-modal3 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+@media screen and (max-width: 834px) {
+  .awards-section__main {
+    flex-direction: column;
+  }
+
+  .awards-section__item {
+    border-right: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .awards-section__icon {
+    padding: 0.6rem;
+  }
+
+  .awards-section__innericon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .awards-section .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+  }
+
+  .modal-content img {
+    max-width: 100%;
+  }
+}
+.photo-section__item {
+  margin-bottom: 1.875rem;
+}
+.photo-section__inneritem {
+  margin-right: 1.875rem;
+}
+.photo-section__item img {
+  display: block;
+}
+.photo-section__flex {
+  display: flex;
+  justify-content: flex-end;
+}

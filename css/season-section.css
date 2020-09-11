@@ -1,0 +1,108 @@
+.season-section {
+  background-color: #0979f5;
+}
+.season-section__wrapper {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.season-section__main {
+  margin-bottom: 3rem;
+}
+.season-section__main:last-child {
+  margin-bottom: 1rem;
+}
+.season-section__titleflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.season-section__title {
+  color: #ffffff;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  font-size: calc(30px + 25 * ((100vw - 320px) / 1120));
+}
+.season-section__inner {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -15px;
+}
+.season-section__item {
+  padding: 0 0.9375rem;
+  width: 33.33333%;
+}
+.season-section__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.season-section__subtitle {
+  padding: 1.344rem 0;
+  background-color: #54A0F7;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: 500;
+  font-size: calc(30px + 12 * ((100vw - 320px) / 1120));
+}
+.season-section__subtitle::after, .season-section__subtitle::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #54A0F7;
+  bottom: 0;
+  z-index: -1;
+}
+.season-section__subtitle::before {
+  right: 50%;
+  transform: skew(0, 30deg);
+}
+.season-section__subtitle::after {
+  left: 50%;
+  transform: skew(0, -30deg);
+}
+.season-section__subtitle:hover::before, .season-section__subtitle:hover::after, .season-section__subtitle:hover {
+  background-color: #6eb2ff;
+}
+.season-section .collapsible-body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.season-section__white {
+  padding: 1.5rem 0;
+  color: #26292e;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: calc(20px + 4 * ((100vw - 320px) / 1120));
+  background-color: #ffffff;
+}
+.season-section__gray {
+  padding: 1.5rem 0;
+  color: #26292e;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: 500;
+  font-size: calc(20px + 4 * ((100vw - 320px) / 1120));
+  background-color: #f4f5f8;
+}
+@media screen and (max-width: 991px) {
+  .season-section__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .season-section__wrapper {
+    padding: 2rem 0;
+  }
+
+  .season-section__item {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1.875em;
+  }
+}

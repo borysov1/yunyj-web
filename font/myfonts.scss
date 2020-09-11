@@ -1,0 +1,75 @@
+
+/* Inter 
+====================================== */
+
+@font-face {
+   font-family: 'Inter';
+   font-style:  normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url("Inter-Regular.woff2?v=3.13") format("woff2"),
+        url("Inter-Regular.woff?v=3.13") format("woff");
+ }
+ @font-face {
+   font-family: 'Inter';
+   font-style:  italic;
+   font-weight: 400;
+   font-display: swap;
+   src: url("Inter-Italic.woff2?v=3.13") format("woff2"),
+        url("Inter-Italic.woff?v=3.13") format("woff");
+ }
+ 
+ @font-face {
+   font-family: 'Inter';
+   font-style:  normal;
+   font-weight: 500;
+   font-display: swap;
+   src: url("Inter-Medium.woff2?v=3.13") format("woff2"),
+        url("Inter-Medium.woff?v=3.13") format("woff");
+ }
+ @font-face {
+   font-family: 'Inter';
+   font-style:  italic;
+   font-weight: 500;
+   font-display: swap;
+   src: url("Inter-MediumItalic.woff2?v=3.13") format("woff2"),
+        url("Inter-MediumItalic.woff?v=3.13") format("woff");
+ }
+
+ /* Monsterrat 
+ ========================================= */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+
+ /* Helvetica
+ ========================================= */
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('HelveticaNeueCyr-Medium.woff2') format('woff2'),
+      url('HelveticaNeueCyr-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('HelveticaNeueCyr-Roman.woff2') format('woff2'),
+      url('HelveticaNeueCyr-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('HelveticaNeueCyr-Bold.woff2') format('woff2'),
+      url('HelveticaNeueCyr-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
